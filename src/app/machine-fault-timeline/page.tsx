@@ -72,7 +72,9 @@ export default function MachineFaultTimeline() {
       .then((res) => res.json())
       .then((json) => {
         setData(json);
-        const uniqueMachines = Array.from(new Set(json.map((item: DiagnosisRecord) => item.machine_name)));
+        const uniqueMachines = Array.from(
+          new Set(json.map((item: DiagnosisRecord) => item.machine_name))
+        ) as string[];
         setMachines(uniqueMachines);
         setSelectedMachines(uniqueMachines);
       });
