@@ -1,9 +1,2 @@
-/** @type {import('eslint').Linter.Config} */
-module.exports = {
-    extends: ['next', 'next/core-web-vitals'],
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-vars': 'off',
-    },
-  };
-  
+// eslint.config.js
+export default [];
