@@ -104,9 +104,9 @@ export default function MachineFaultTimeline() {
       const y = d.fault_type;
       const isChanged = prevType !== y;
       prevType = y;
-  
+    
       return {
-        x: d.detected_at,
+        x: new Date(d.detected_at).getTime(), // ✅ 변경된 부분: 숫자 timestamp
         y: y,
         radius: 4,
         pointStyle: 'circle',
@@ -119,6 +119,7 @@ export default function MachineFaultTimeline() {
         hitRadius: 10,
       };
     });
+    
   
     return {
       label: machine,
@@ -163,7 +164,7 @@ export default function MachineFaultTimeline() {
       x: {
         type: 'time',
         time: {
-          tooltipFormat: 'yyyy-MM-dd HH:mm',
+          unit: 'minute',
           displayFormats: {
             hour: 'yyyy-MM-dd HH시',
             minute: 'HH:mm',
