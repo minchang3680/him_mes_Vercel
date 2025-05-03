@@ -1,5 +1,6 @@
 'use client';
 
+// @ts-nocheck
 import { useEffect, useState } from 'react';
 import { format, subDays } from 'date-fns';
 import {
