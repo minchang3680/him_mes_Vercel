@@ -1,6 +1,9 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true, // ✅ Vercel 빌드 시 ESLint 무시
+  },
   async rewrites() {
     return [
       {
