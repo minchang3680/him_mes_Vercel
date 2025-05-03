@@ -1,6 +1,5 @@
 {
-    "eslint": {
-      "ignoreDuringBuilds": true
-    }
+    "buildCommand": "next build --no-lint"
   }
+  
   
