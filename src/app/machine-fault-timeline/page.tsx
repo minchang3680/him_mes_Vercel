@@ -1,3 +1,8 @@
+export const metadata = {
+  title: '고장 추세 분석',
+  description: '기계별 시간 순 고장 추이 분석 페이지입니다',
+};
+
 'use client';
 
 // @ts-nocheck
