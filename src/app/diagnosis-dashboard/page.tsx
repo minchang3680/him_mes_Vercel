@@ -1,10 +1,5 @@
 'use client';
 
-export const metadata = {
-  title: '진단 대시보드',
-  description: '기계 상태 진단을 시각화한 대시보드입니다',
-};
-
 // @ts-nocheck
 import { useEffect, useState } from 'react';
 import './datepicker.css';

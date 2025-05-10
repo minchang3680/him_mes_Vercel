@@ -1,10 +1,5 @@
 'use client';
 
-export const metadata = {
-  title: '진동 데이터 테이블',
-  description: '측정된 진동 데이터를 확인용 페이지입니다',
-};
-
 // @ts-nocheck
 import { useEffect, useState } from 'react';
 
