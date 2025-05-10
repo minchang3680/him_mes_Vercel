@@ -1,6 +1,6 @@
 // src/app/diagnosis-dashboard/page.tsx
 import { Metadata } from 'next';
-import DiagnosisDashboard from './Client.jsx';
+import DiagnosisDashboard from './Client';
 
 export const metadata: Metadata = {
   title: '진단 대시보드',
